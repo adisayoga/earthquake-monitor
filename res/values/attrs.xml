@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="background" format="color" />
+    <attr name="actionbarBackground" format="reference" />
+    <attr name="actionitemBackground" format="color" />
+    <attr name="cacheColorHint" format="color" />
+    <attr name="regionColor" format="color" />
+    <attr name="dateColor" format="color" />
+
+</resources>

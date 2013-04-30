@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:defaultValue="6"
+        android:entries="@array/magnitude_entries"
+        android:entryValues="@array/magnitude_values"
+        android:key="mail_min_mag_reg"
+        android:summary="@string/pref_mail_min_mag_reg_sum"
+        android:title="@string/pref_mail_min_mag_reg_title" />
+    
+    <ListPreference
+        android:defaultValue="7"
+        android:entries="@array/magnitude_entries"
+        android:entryValues="@array/magnitude_values"
+        android:key="mail_min_mag_global"
+        android:summary="@string/pref_mail_min_mag_global_sum"
+        android:title="@string/pref_mail_min_mag_global_title" />
+
+    <EditTextPreference
+        android:defaultValue="smtp.gmail.com"
+        android:key="mail_host"
+        android:summary="@string/pref_mail_host_sum"
+        android:title="@string/pref_mail_host_title" />
+
+    <EditTextPreference
+        android:defaultValue="465"
+        android:key="mail_port"
+        android:summary="@string/pref_mail_port_sum"
+        android:title="@string/pref_mail_port_title" />
+    
+    <EditTextPreference
+        android:defaultValue="465"
+        android:key="mail_sport"
+        android:summary="@string/pref_mail_sport_sum"
+        android:title="@string/pref_mail_sport_title" />
+    
+    <Preference
+        android:key="mail_login"
+        android:summary="@string/pref_mail_login_sum"
+        android:title="@string/pref_mail_login_title" />
+    
+    <Preference
+        android:key="mail_template"
+        android:summary="@string/pref_mail_template_sum"
+        android:title="@string/pref_mail_template_title" />
+    
+</PreferenceScreen>

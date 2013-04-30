@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Magnitudo -->
+    <string-array name="magnitude_entries">
+    	<item>M1.0+ Mikro</item>
+    	<item>M3.0+ Goncangan</item>
+    	<item>M4.0+ Kecil</item>
+    	<item>M5.0+ Keras</item>
+    	<item>M6.0+ Merusak</item>
+    	<item>M7.0+ Destruktif</item>
+    	<item>M8.0+ Besar</item>
+    	<item>M9.0+ Bencana</item>
+    </string-array>
+    
+    <string-array name="magnitude_values">
+    	<item>1</item>
+    	<item>3</item>
+    	<item>4</item>
+    	<item>5</item>
+    	<item>6</item>
+    	<item>7</item>
+    	<item>8</item>
+    	<item>9</item>
+    </string-array>
+    
+    <!-- Rentang hari/umur data akan disimpan -->
+    <string-array name="age_entries">
+    	<item>1 hari</item>
+    	<item>2 hari</item>
+    	<item>3 hari</item>
+    	<item>5 hari</item>
+    	<item>1 minggu</item>
+    	<item>2 minggu</item>
+    	<item>1 bulan</item>
+    	<item>6 bulan</item>
+    </string-array>
+    
+    <string-array name="age_values">
+    	<item>1</item>
+    	<item>2</item>
+    	<item>3</item>
+    	<item>5</item>
+    	<item>7</item>
+    	<item>14</item>
+    	<item>30</item>
+    	<item>183</item>
+    </string-array>
+    
+    <!-- Unit -->
+    <string-array name="unit_entries">
+    	<item>Metric (Kilometer)</item>
+    	<item>US (Mil)</item>
+    </string-array>
+    
+    <string-array name="unit_values">
+    	<item>METRIC</item>
+    	<item>US</item>
+    </string-array>
+    
+    <!-- Tema -->
+    <string-array name="theme_entries">
+    	<item>Gelap</item>
+    	<item>Cerah</item>
+    	<item>Biru</item>
+    </string-array>
+    
+    <string-array name="theme_values">
+    	<item>DEFAULT</item>
+    	<item>LIGHT</item>
+    	<item>BLUE</item>
+    </string-array>
+    
+    <!-- Interval -->
+    <string-array name="interval_entries">
+    	<item>Setiap menit</item>
+    	<item>Setiap 5 menit</item>
+    	<item>Setiap 15 menit*</item>
+    	<item>Setiap &#189; jam*</item>
+    	<item>Setiap jam*</item>
+    	<item>Setiap 3 jam</item>
+    	<item>Setiap 6 jam</item>
+    	<item>Setiap &#189; hari*</item>
+    	<item>Setiap hari*</item>
+    </string-array>
+    
+    <string-array name="interval_values">
+    	<item>60000</item>
+    	<item>300000</item>
+    	<item>900000</item>    <!-- INTERVAL_FIFTEEN_MINUTES -->
+    	<item>1800000</item>   <!-- INTERVAL_HALF_HOUR -->
+    	<item>3600000</item>   <!-- INTERVAL_HOUR -->
+    	<item>10800000</item>
+    	<item>21600000</item>
+    	<item>43200000</item>  <!-- INTERVAL_HALF_DAY -->
+    	<item>86400000</item>  <!-- INTERVAL_DAY -->
+    </string-array>
+    
+    <string-array name="range_metric_entries">
+    	<item>100 km</item>
+    	<item>250 km</item>
+    	<item>500 km</item>
+    	<item>1000 km</item>
+    </string-array>
+    
+    <string-array name="range_metric_values">
+    	<item>100000</item>
+    	<item>250000</item>
+    	<item>500000</item>
+    	<item>1000000</item>
+    </string-array>
+    
+    <string-array name="range_us_entries">
+    	<item>~60 mil</item>
+    	<item>~150 mil</item>
+    	<item>~300 mil</item>
+    	<item>~600 mil</item>
+    </string-array>
+    
+    <!-- Pilihan saat list longClick -->
+    <string-array name="list_options">
+    	<item>Tampilkan Detail</item>
+    	<item>Tampilkan Pada Peta</item>
+    	<item>Share ke Facebook</item>
+    	<item>Share ke Twitter</item>
+    	<item>Kirim Email</item>
+        <item>Kirim Pesan SMS</item>
+    	<item>Share Lainnya</item>
+    </string-array>
+    
+    <!-- Layer peta -->
+    <string-array name="layers">
+    	<item>Satelit</item>
+    	<item>Street View</item>
+    	<item>Lalu-lintas</item>
+    </string-array>
+    
+    <!-- Pilihan saat contact longClick -->
+    <string-array name="contact_list_options">
+        <item>Edit</item>
+        <item>Hapus</item>
+    </string-array>
+</resources>

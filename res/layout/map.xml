@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?background"
+    android:orientation="vertical" >
+
+    <!-- MapView -->
+
+    <com.google.android.maps.MapView
+        android:id="@+id/quake_mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="07xarcnUBxkoslBy516jtetYtBIUTpBc6jT3_rw"
+        android:clickable="true" />
+
+    <!-- Action Bar -->
+
+    <LinearLayout style="@style/ActionBar" >
+
+        <TextView
+            style="@style/ActionBarTitle"
+            android:text="@string/map_title" />
+
+        <ImageView style="@style/ActionBarSeparator" />
+
+        <LinearLayout style="@style/ActionBarButtonLayout" >
+
+            <ImageButton
+                android:id="@+id/location"
+                style="@style/ActionBarButton"
+                android:src="@drawable/ic_action_locate"
+                android:contentDescription="@string/show_location" />
+
+            <ImageView style="@style/ActionBarSeparator" />
+
+            <ImageButton
+                android:id="@+id/refresh"
+                style="@style/ActionBarButton"
+                android:src="@drawable/ic_action_refresh"
+                android:contentDescription="@string/refresh" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

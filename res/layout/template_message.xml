@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?background" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/template_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/template_main" />
+
+        <EditText
+            android:id="@+id/template_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/template_textview"
+            android:layout_below="@id/template_textview"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/template_tags"
+            android:hint="@string/template_main"
+            android:layout_marginBottom="10dp"
+            android:inputType="textCapSentences|textMultiLine" />
+
+        <Button
+            android:id="@+id/template_tags"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/template_text"
+            android:text="@string/ellipsis" />
+
+        <TextView
+            android:id="@+id/detail_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/template_text"
+            android:text="@string/template_details" />
+
+        <EditText
+            android:id="@+id/detail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/detail_textview"
+            android:layout_below="@id/detail_textview"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/detail_tags"
+            android:hint="@string/template_details"
+            android:inputType="textCapSentences|textMultiLine" />
+
+        <Button
+            android:id="@+id/detail_tags"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/detail_text"
+            android:text="@string/ellipsis" />
+    </RelativeLayout>
+
+</ScrollView>

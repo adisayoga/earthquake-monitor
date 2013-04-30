@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?background"
+    android:orientation="vertical" >
+    
+    <!-- Region -->
+    
+    <LinearLayout style="@style/ActionBar" >
+        <TextView
+            android:id="@+id/title"
+            style="@style/ActionBarTitle"
+            android:text="@string/app_name" 
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="false"
+            android:scrollHorizontally="true" />
+            
+        <ImageView style="@style/ActionBarSeparator" />
+        
+        <LinearLayout style="@style/ActionBarButtonLayout" >
+        
+            <ImageButton
+                android:id="@+id/show_map"
+                style="@style/ActionBarButton"
+                android:src="@drawable/ic_action_marker"
+                android:contentDescription="@string/show_map" />
+
+            <ImageView style="@style/ActionBarSeparator" />
+
+            <ImageButton
+                android:id="@+id/usgs_detail"
+                style="@style/ActionBarButton"
+                android:src="@drawable/ic_action_web"
+                android:contentDescription="@string/usgs_detail" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/action_bar"
+        android:layout_alignBottom="@+id/action_item"
+        android:layout_marginBottom="48dp" >
+    
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+            
+            <ImageView
+                android:id="@+id/map"
+                android:layout_width="146dp"
+                android:layout_height="146dp"
+                android:src="@drawable/ic_globe"
+                android:contentDescription="@string/show_map" />
+                
+            <ImageView
+                android:id="@+id/map_mask"
+                android:layout_width="146dp"
+                android:layout_height="146dp"
+                android:src="@drawable/ic_globe_mask"
+                android:visibility="gone" />
+       
+            <ProgressBar
+                android:id="@+id/map_progress"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="53dp"
+                android:visibility="gone" />
+           
+            <TableLayout 
+                android:layout_toRightOf="@id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp">
+                
+                <TableRow>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="@string/region" />
+                    
+                    <TextView 
+                        android:id="@+id/region"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/region"
+                        android:layout_marginLeft="10dp"
+                        android:width="0dp" />
+                </TableRow>
+                
+                <TableRow android:layout_marginTop="10dp">
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="@string/location" />
+                    
+                    <TextView 
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/location"
+                        android:layout_marginLeft="10dp"
+                        android:width="0dp" />
+                </TableRow>
+                
+                <TableRow android:layout_marginTop="10dp">
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="@string/magnitude" />
+                    
+                    <TextView 
+                        android:id="@+id/magnitude"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/magnitude"
+                        android:layout_marginLeft="10dp"
+                        android:width="0dp" />
+                </TableRow>
+                
+                <TableRow android:layout_marginTop="10dp">
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="@string/quake_time" />
+                    
+                    <TextView 
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date"
+                        android:layout_marginLeft="10dp"
+                        android:width="0dp" />
+                </TableRow>
+                
+                <TableRow android:layout_marginTop="10dp">
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="@string/distance" />
+                    
+                    <TextView 
+                        android:id="@+id/distance"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/distance"
+                        android:layout_marginLeft="10dp"
+                        android:width="0dp" />
+                </TableRow>
+                
+                <TableRow android:layout_marginTop="10dp">
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="@string/depth" />
+                    
+                    <TextView 
+                        android:id="@+id/depth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/depth"
+                        android:layout_marginLeft="10dp"
+                        android:width="0dp" />
+                </TableRow>
+                
+            </TableLayout>
+        </RelativeLayout>
+        
+    </ScrollView>
+    
+    <LinearLayout 
+        style="@style/ActionItem" 
+        android:layout_alignParentBottom="true" >
+        
+        <LinearLayout 
+            android:layout_width="0dp" 
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent">
+            
+            <!-- TODO Icon actionItem -->
+
+            <ImageButton
+                android:id="@+id/share_to_facebook"
+                style="@style/ActionBarButton"
+                android:src="@drawable/ic_action_facebook"
+                android:contentDescription="@string/share_to_facebook" />
+            
+            <ImageButton
+                android:id="@+id/share_to_twitter"
+                style="@style/ActionBarButton"
+                android:src="@drawable/ic_action_twitter"
+                android:contentDescription="@string/share_to_twitter" />
+            
+            <ImageButton
+                android:id="@+id/send_mail"
+                style="@style/ActionBarButton"
+                android:src="@drawable/ic_action_mail"
+                android:contentDescription="@string/send_mail" />
+            
+            <ImageButton
+                android:id="@+id/send_sms"
+                style="@style/ActionBarButton"
+                android:src="@drawable/ic_action_sms"
+                android:contentDescription="@string/send_sms" />
+            
+        </LinearLayout>
+        
+        <ImageButton
+            android:id="@+id/share_others"
+            style="@style/ActionBarButton"
+            android:src="@drawable/ic_action_share"
+            android:contentDescription="@string/others" />
+    </LinearLayout>
+</RelativeLayout>

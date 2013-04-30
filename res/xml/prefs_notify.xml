@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:defaultValue="5"
+        android:entries="@array/magnitude_entries"
+        android:entryValues="@array/magnitude_values"
+        android:key="notify_min_mag_reg"
+        android:summary="@string/pref_notify_min_mag_reg_sum"
+        android:title="@string/pref_notify_min_mag_reg_title" />
+    
+    <ListPreference
+        android:defaultValue="6"
+        android:entries="@array/magnitude_entries"
+        android:entryValues="@array/magnitude_values"
+        android:key="notify_min_mag_global"
+        android:summary="@string/pref_notify_min_mag_global_sum"
+        android:title="@string/pref_notify_min_mag_global_title" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="notify_alert"
+        android:summary="@string/pref_notify_alert_sum"
+        android:title="@string/pref_notify_alert_title" />
+
+    <RingtonePreference
+        android:defaultValue=""
+        android:dependency="notify_alert"
+        android:key="notify_alert_sound"
+        android:ringtoneType="notification"
+        android:summary="@string/pref_notify_alert_sound_sum"
+        android:title="@string/pref_notify_alert_sound_title" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="notify_flash"
+        android:summary="@string/pref_notify_flash_sum"
+        android:title="@string/pref_notify_flash_title" />
+    
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="notify_vibrate"
+        android:summary="@string/pref_notify_vibrate_sum"
+        android:title="@string/pref_notify_vibrate_title" />
+
+</PreferenceScreen>

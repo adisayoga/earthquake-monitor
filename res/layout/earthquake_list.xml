@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?background"
+    android:orientation="vertical" >
+
+    <!-- Action Bar -->
+
+    <LinearLayout style="@style/ActionBar" >
+
+        <TextView
+            style="@style/ActionBarTitle"
+            android:text="@string/app_name" />
+
+        <ImageView style="@style/ActionBarSeparator" />
+
+        <LinearLayout style="@style/ActionBarButtonLayout" >
+
+            <ImageButton
+                android:id="@+id/show_map"
+                style="@style/ActionBarButton"
+                android:src="@drawable/ic_action_marker"
+            android:contentDescription="@string/show_map" />
+
+            <ImageView style="@style/ActionBarSeparator" />
+
+            <ImageButton
+                android:id="@+id/refresh"
+                style="@style/ActionBarButton"
+                android:src="@drawable/ic_action_refresh"
+                android:contentDescription="@string/refresh" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Empty message -->
+
+    <LinearLayout
+        android:id="@+id/no_quake"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="120dp"
+        android:cacheColorHint="?cacheColorHint"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/no_quake_sum"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/no_quake_msg" />
+    </LinearLayout>
+
+    <!-- ListView -->
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="?cacheColorHint"
+        android:fastScrollEnabled="true"
+        android:visibility="gone" />
+
+</LinearLayout>

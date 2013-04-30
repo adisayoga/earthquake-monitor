@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:defaultValue="6"
+        android:entries="@array/magnitude_entries"
+        android:entryValues="@array/magnitude_values"
+        android:key="twitter_min_mag_reg"
+        android:summary="@string/pref_twitter_min_mag_reg_sum"
+        android:title="@string/pref_twitter_min_mag_reg_title" />
+    
+    <ListPreference
+        android:defaultValue="7"
+        android:entries="@array/magnitude_entries"
+        android:entryValues="@array/magnitude_values"
+        android:key="twitter_min_mag_global"
+        android:summary="@string/pref_twitter_min_mag_global_sum"
+        android:title="@string/pref_twitter_min_mag_global_title" />
+
+    <Preference
+        android:key="twitter_template"
+        android:summary="@string/pref_twitter_template_sum"
+        android:title="@string/pref_twitter_template_title" />
+    
+</PreferenceScreen>

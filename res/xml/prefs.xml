@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- Display -->
+	<PreferenceCategory android:title="@string/pref_display">
+
+		<ListPreference android:key="min_mag"
+			android:defaultValue="3" 
+			android:title="@string/pref_min_mag_title"
+			android:summary="@string/pref_min_mag_sum" 
+			android:entries="@array/magnitude_entries"
+			android:entryValues="@array/magnitude_values" />
+
+		<CheckBoxPreference android:key="auto_update"
+			android:defaultValue="false" 
+			android:title="@string/pref_auto_update_title"
+			android:summary="@string/pref_auto_update_sum" />
+
+		<ListPreference android:key="interval"
+			android:defaultValue="900000" 
+			android:title="@string/pref_interval_title"
+			android:summary="@string/pref_interval_sum" 
+			android:entries="@array/interval_entries"
+			android:entryValues="@array/interval_values" 
+			android:dependency="auto_update" />
+
+		<ListPreference android:key="max_age"
+			android:defaultValue="3" 
+			android:title="@string/pref_max_age_title"
+			android:summary="@string/pref_max_age_sum" 
+			android:entries="@array/age_entries"
+			android:entryValues="@array/age_values" />
+
+		<ListPreference android:key="unit"
+			android:defaultValue="METRIC" 
+			android:title="@string/pref_unit_title"
+			android:summary="@string/pref_unit_sum" 
+			android:entries="@array/unit_entries"
+			android:entryValues="@array/unit_values" />
+
+		<ListPreference android:key="theme"
+			android:defaultValue="LIGHT" 
+			android:title="@string/pref_theme_title"
+			android:summary="@string/pref_theme_sum" 
+			android:entries="@array/theme_entries"
+			android:entryValues="@array/theme_values" />
+	</PreferenceCategory>
+
+	<!-- Lokasi -->
+	<PreferenceCategory android:title="@string/pref_loc">
+	
+		<CheckBoxPreference android:key="loc_detect"
+			android:defaultValue="true" 
+			android:title="@string/pref_loc_detect_title"
+			android:summary="@string/pref_loc_detect_sum"
+			android:disableDependentsState="true" />
+
+		<Preference android:key="loc_manual" 
+		    android:title="@string/pref_loc_manual_title"
+			android:summary="@string/pref_loc_manual_sum" 
+			android:dependency="loc_detect" />
+	</PreferenceCategory>
+
+	<!-- Notifikasi -->
+	<PreferenceCategory android:title="@string/pref_notify">
+	
+		<ListPreference android:key="range"
+			android:defaultValue="250000" 
+			android:title="@string/pref_range_title"
+			android:summary="@string/pref_range_sum" 
+			android:entries="@array/range_metric_entries"
+			android:entryValues="@array/range_metric_values" />
+
+		<CheckBoxPreference android:key="notify_send"
+			android:defaultValue="true" 
+			android:title="@string/pref_notify_send_title"
+			android:summary="@string/pref_notify_send_sum" />
+
+		<Preference android:key="notify" 
+		    android:title="@string/pref_notify_title"
+			android:summary="@string/pref_notify_sum" 
+			android:dependency="notify_send" />
+
+		<CheckBoxPreference android:key="facebook_send"
+			android:defaultValue="true" 
+			android:title="@string/pref_facebook_send_title"
+			android:summary="@string/pref_facebook_send_sum" />
+
+		<Preference android:key="facebook" 
+		    android:title="@string/pref_facebook_title"
+			android:summary="@string/pref_facebook_sum" 
+			android:dependency="facebook_send" />
+			
+        <CheckBoxPreference android:key="twitter_send"
+            android:defaultValue="true" 
+            android:title="@string/pref_twitter_send_title"
+            android:summary="@string/pref_twitter_send_sum" />
+
+        <Preference android:key="twitter" 
+            android:title="@string/pref_twitter_title"
+            android:summary="@string/pref_twitter_sum" 
+            android:dependency="twitter_send" />
+            
+        <CheckBoxPreference android:key="mail_send"
+            android:defaultValue="true" 
+            android:title="@string/pref_mail_send_title"
+            android:summary="@string/pref_mail_send_sum" />
+
+        <Preference android:key="mail" 
+            android:title="@string/pref_mail_title"
+            android:summary="@string/pref_mail_sum" 
+            android:dependency="mail_send" />
+            
+        <CheckBoxPreference android:key="sms_send"
+            android:defaultValue="true" 
+            android:title="@string/pref_sms_send_title"
+            android:summary="@string/pref_sms_send_sum" />
+
+        <Preference android:key="sms" 
+            android:title="@string/pref_sms_title"
+            android:summary="@string/pref_sms_sum" 
+            android:dependency="sms_send" />
+	        
+	    <Preference
+	        android:key="social_connect"
+	        android:summary="@string/pref_social_connect_sum"
+	        android:title="@string/pref_social_connect_title" />
+	        
+	    <Preference
+	        android:key="contact"
+	        android:summary="@string/pref_contact_sum"
+	        android:title="@string/pref_contact_title" />
+		        
+	</PreferenceCategory>
+
+	<!-- Lainnya -->
+	<PreferenceCategory android:title="@string/pref_others">
+	
+		<CheckBoxPreference android:key="boot_start"
+			android:defaultValue="false" 
+			android:title="@string/pref_boot_start_title"
+			android:summary="@string/pref_boot_start_sum" />
+
+		<Preference android:key="dialog" 
+		    android:title="@string/pref_dialog_title"
+			android:summary="@string/pref_dialog_sum" />
+	</PreferenceCategory>
+
+</PreferenceScreen>

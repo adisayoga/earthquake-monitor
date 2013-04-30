@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gempa Monitor</string>
+    
+    <!-- Title +description -->
+    <string name="map_title">Peta Gempa</string>
+    <string name="detail_title">Detail Gempa</string>
+    <string name="prefs_title">Pengaturan</string>
+    <string name="help_title">Bantuan</string>
+    <string name="new_quake_title">Gempa Baru</string>
+    <string name="no_quake_sum">Tidak Terdapat Gempa Bumi</string>
+    <string name="no_quake_msg">Ini merupakan hal bagus</string>
+    <string name="not_found_title">Data Tidak Ditemukan</string>
+    <string name="not_found_msg">Kemungkinan sudah terhapus</string>
+    <string name="no_contact_sum">Tidak Terdapat Daftar Kontak</string>
+    <string name="no_contact_msg">Untuk menambah kontak, klik Tambah atau Input Baru pada menu</string>
+    <string name="twitter_title">Twitter</string>
+    
+    <!-- Kata -->
+    <string name="region">Wilayah</string>
+    <string name="date">Tanggal</string>
+    <string name="quake_time">Waktu Gempa</string>
+    <string name="magnitude">Magnitudo</string>
+    <string name="sr">SR</string>
+    <string name="location">Lokasi</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="address">Alamat</string>
+    <string name="distance">Jarak</string>
+    <string name="distance_short">Jarak</string>
+    <string name="depth">Kedalaman</string>
+    <string name="depth_short">Kedlmn</string>
+    <string name="name">Nama</string>
+    <string name="phone_number">Nomor telephone</string>
+    <string name="mail_address">Alamat Email</string>
+    <string name="password">Password</string>
+    <string name="template_main">Template Utama</string>
+    <string name="template_details">Detail Template</string>
+    <string name="to">Ke</string>
+    <string name="subject">Subjek</string>
+    <string name="message">Pesan</string>
+    <string name="layers">Layers</string>
+    <string name="help">Bantuan</string>
+    <string name="prefs">Pengaturan</string>
+    <string name="contact_list">Daftar Kontak</string>
+    <string name="dir_north">LU</string>
+    <string name="dir_south">LS</string>
+    <string name="dir_east">BT</string>
+    <string name="dir_west">BB</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="separator">Separator</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    
+    <string name="ellipsis">&#8230;</string>
+    
+    <!-- Kata kerja -->
+    <string name="refresh">Refresh</string>
+    <string name="show_location">Perlihatkan Lokasi</string>
+    <string name="show_map">Perlihatkan Peta</string>
+    <string name="show_map_short">Peta</string>
+    <string name="usgs_detail">Detail USGS&#8230;</string>
+    <string name="send">Kirim</string>
+    <string name="send_sms">Kirim SMS</string>
+    <string name="send_sms_short">SMS</string>
+    <string name="share">Share</string>
+    <string name="share_to_facebook">Share ke Facebook</string>
+    <string name="share_to_facebook_short">Facebook</string>
+    <string name="share_to_twitter">Share ke Twitter</string>
+    <string name="share_to_twitter_short">Twitter</string>
+    <string name="send_mail">Kirim Email</string>
+    <string name="send_mail_short">Email</string>
+    <string name="contact_add">Tambah</string>
+    <string name="contact_new">Input Baru</string>
+    <string name="others">Lainnya</string>
+    <string name="save">Simpan</string>
+    <string name="update">Update</string>
+    <string name="back">Kembali</string>
+    <string name="cancel">Batal</string>
+    <string name="close">Tutup</string>
+    <string name="delete">Buang</string>
+    
+    <!-- Kata penghubung kalimat -->
+    <string name="conj_from">dari</string>
+    
+    <!-- Pesan/kalimat -->
+    <string name="unknown_location">Lokasi tidak diketahui</string>
+    <string name="no_contact">Tidak terdapat data kontak</string>
+    <string name="not_login">Anda belum login</string>
+    <string name="auth_fail">Login gagal</string>
+    <string name="auth_success">Login berhasil</string>
+    <string name="logging_out">Sedang logout&#8230;</string>
+    <string name="welcome">Selamat datang</string>
+    <string name="network_error">Jaringan error! Pastikan anda terhubung ke internet</string>
+    <string name="facebook_error">Gagal koneksi ke Facebook</string>
+    <string name="sms_sent">Pesan telah dikirim</string>
+    <string name="sms_fail">Pesan gagal dikirim</string>
+    <string name="post_sent">Pesan telah diposting</string>
+    <string name="post_fail">Gagal posting, coba lagi nanti</string>
+    <string name="facebook_post_sent">Pesan telah diposting ke Facebook</string>
+    <string name="facebook_post_fail">Pesan gagal diposting ke Facebook</string>
+    <string name="twitter_post_sent">Pesan telah diposting ke Twitter</string>
+    <string name="twitter_post_fail">Pesan gagal diposting ke Twitter</string>
+    <string name="post_message_sum">Apa yang anda pikirkan</string>
+    <string name="mail_sent">Email berhasil dikirim</string>
+    <string name="mail_fail">Email tidak terkirim</string>
+    <string name="show_detail_short">Detail</string>
+    <string name="dont_show_again">Jangan perlihatkan saya lagi</string>
+    <string name="select_location">Pilih Lokasi Berikut</string>
+    <string name="waiting_location">Menunggu lokasi&#8230;</string>
+    <string name="refreshing">Sedang memuat&#8230;</string>
+    <string name="loading">Sedang memuat&#8230;</string>
+    <string name="phone_empty">Nomor telepon kosong</string>
+    <string name="message_empty">Pesan kosong</string>
+    
+    <!-- Template -->
+    <string name="tpl_new_quake_ticker">Gempa baru: M{magnitude} {region}</string>
+    <string name="tpl_new_quake_content">M{magnitude} {region}</string>
+    <string name="tpl_new_quake_contents">M{magnitude} {region}, dan {count} lainnya</string>
+    <string name="tpl_def_sms">Telah terjadi gempa:\n{details}</string>
+    <string name="tpl_def_sms_detail">{date} M{magnitude} {region} ({location}) Kedlmn {depth} Jarak {distance}</string>
+    <string name="tpl_def_twitter">Gempa {date} M{magnitude} {region} ({location})</string>
+    <string name="tpl_def_mail">Telah terjadi gempa:\n{details}</string>
+    <string name="tpl_def_mail_detail">{date} M{magnitude} {region} ({location}) Kedlmn {depth} Jarak {distance}</string>
+    
+    <!-- Keterangan tanggal dan waktu -->
+    <string name="tpl_just_now">Baru saja</string>
+    <string name="tpl_minute_ago">%d menit lalu</string>
+    <string name="tpl_minutes_ago">%d menit lalu</string>
+    <string name="tpl_hour_ago">%d jam lalu</string>
+    <string name="tpl_hours_ago">%d jam lalu</string>
+    <string name="tpl_yesterday">Kemarin</string>
+    <string name="tpl_days_ago">%d hari lalu</string>
+    <string name="tpl_month_ago">bulan lalu</string>
+    <string name="tpl_months_ago">%d bulan lalu</string>
+    
+    <string name="format_time">hh:mm a</string>
+    <string name="format_time_day">E hh:mm a</string>
+    <string name="format_date_short">dd/MM</string>
+    <string name="format_datetime">E dd-MMMM hh:mm a</string>
+    <string name="format_datetime_year">E dd-MMMM-yyyy hh:mm a</string>
+    
+    <!-- Dialog -->
+    <string name="dialog_startup_title">Pemberitahuan</string>
+    <string name="dialog_startup_msg">Aplikasi ini dapat berjalan secara periodik
+		untuk menemukan kejadian gempa bumi dan mengirim pemberitahuan. Anda dapat 
+		mengaktifkan pemberitahuan ini melalui Menu &gt; Pengaturan.\n\nKetika 
+		pemberitahuan tidak aktif, anda tidak dapat menerima pemberitahuan otomatis, 
+		dan anda harus me-refresh secara manual.\n\nAplikasi juga dapat memposting 
+		informasi gempa ke wall Facebook, tetapi sebelumnya harus login dahulu 
+		menggunakan akun Facebook anda.</string>
+	<string name="dialog_network_error_title">Jaringan Error</string>
+    <string name="dialog_network_error_msg">Tidak bisa mendapatkan data gempa bumi terbaru.\n\nPastikan anda terhubung ke internet (mobile atau wifi).</string>
+    <string name="dialog_warn_interval_title">Peringatan</string>
+    <string name="dialog_warn_interval_msg">Gunakan interval &quot;tak tepat&quot; (15 menit,
+		setengah jam, satu jam, atau satu hari) untuk menghemat baterai. Ini berarti
+		mendapatkan data mungkin tidak akan sesuai dengan yang anda kira.</string>
+    	
+    <!-- Preferences -->
+    <string name="pref_display">Display</string>
+    
+    <string name="pref_min_mag_title">Magnitudo Minimal</string>
+    <string name="pref_min_mag_sum">Magnitudo minimal gempa bumi yang akan ditampilkan</string>
+    <string name="pref_auto_update_title">Refresh Otomatis</string>
+    <string name="pref_auto_update_sum">Otomatis cek gempa bumi baru secara periodik</string>
+    <string name="pref_interval_title">Interval</string>
+    <string name="pref_interval_sum">Seberapa sering pengecekan gempa bumi baru</string>
+    <string name="pref_max_age_title">Umur Maksimal</string>
+    <string name="pref_max_age_sum">Gempa bumi lebih lama dari ini akan dihapus</string>
+    <string name="pref_unit_title">Unit</string>
+    <string name="pref_unit_sum">Menentukan unit yang digunakan ketika menampilkan jarak</string>
+    <string name="pref_theme_title">Tema</string>
+    <string name="pref_theme_sum">Tema yang digunakan</string>
+    
+    <string name="pref_social_connect_title">Social Connect</string>
+    <string name="pref_social_connect_sum">Koneksi ke jejaring sosial</string>
+    <string name="pref_contact_title">Daftar Kontak</string>
+    <string name="pref_contact_sum">Daftar kontak yang akan dikirimkan SMS secara otomatis</string>
+    
+    <!-- Lokasi -->
+    <string name="pref_loc">Lokasi</string>
+    
+    <string name="pref_loc_detect_title">Deteksi Lokasi Saya</string>
+    <string name="pref_loc_detect_sum">Menentukan apakah lokasi dapat dideteksi atau tidak</string>
+    <string name="pref_loc_manual_title">Input Lokasi Manual</string>
+    <string name="pref_loc_manual_sum">Menginputkan lokasi secara manual</string>
+    
+    <!-- Notifikasi -->
+    <string name="pref_notify">Pemberitahuan</string>
+    
+    <string name="pref_range_title">Jarak</string>
+    <string name="pref_range_sum">Jarak gempa dikategorikan sebagai wilayah regional</string>
+	
+	<string name="pref_notify_title">Pengaturan Pemberitahuan</string>
+	<string name="pref_notify_sum">Pengaturan pemberitahuan lanjutan</string>
+    <string name="pref_notify_send_title">Kirim Pemberitahuan</string>
+	<string name="pref_notify_send_sum">Kirim pemberitahuan ketika terjadi gempa bumi</string>
+	
+	<string name="pref_notify_min_mag_reg_title">Magnitudo Regional</string>
+	<string name="pref_notify_min_mag_reg_sum">Minimal magnitudo pemberitahuan untuk wilayah regional</string>
+    <string name="pref_notify_min_mag_global_title">Magnitudo Global</string>
+	<string name="pref_notify_min_mag_global_sum">Minimal magnitudo pemberitahuan untuk wilayah global</string>
+    <string name="pref_notify_alert_title">Alert</string>
+	<string name="pref_notify_alert_sum">Membunyikan alert saat pemberitahuan</string>
+	<string name="pref_notify_alert_sound_title">Suara Alert</string>
+	<string name="pref_notify_alert_sound_sum">Suara dari alert saat pemberitahuan</string>
+	<string name="pref_notify_flash_title">Flash</string>
+	<string name="pref_notify_flash_sum">Flash LED saat pemberitahuan</string>
+	<string name="pref_notify_vibrate_title">Getar</string>
+	<string name="pref_notify_vibrate_sum">Getar saat pemberitahuan</string>
+	
+	<!-- Facebook -->
+	<string name="pref_facebook_title">Pengaturan Facebook</string>
+	<string name="pref_facebook_sum">Pengaturan posting ke Facebook lanjutan</string>
+	<string name="pref_facebook_send_title">Posting ke Facebook</string>
+	<string name="pref_facebook_send_sum">Posting ke Facebook ketika terjadi gempa bumi</string>
+	<string name="pref_facebook_min_mag_reg_title">Magnitudo Regional</string>
+	<string name="pref_facebook_min_mag_reg_sum">Minimal magnitudo posting pesan untuk wilayah regional</string>
+    <string name="pref_facebook_min_mag_global_title">Magnitudo Global</string>
+	<string name="pref_facebook_min_mag_global_sum">Minimal magnitudo posting pesan untuk wilayah global</string>
+	
+    <!-- Twitter -->
+    <string name="pref_twitter_title">Pengaturan Twitter</string>
+    <string name="pref_twitter_sum">Pengaturan posting ke Twitter lanjutan</string>
+    <string name="pref_twitter_send_title">Posting ke Twitter</string>
+    <string name="pref_twitter_send_sum">Posting ke Twitter ketika terjadi gempa bumi</string>
+    <string name="pref_twitter_min_mag_reg_title">Magnitudo Regional</string>
+    <string name="pref_twitter_min_mag_reg_sum">Minimal magnitudo posting pesan untuk wilayah regional</string>
+    <string name="pref_twitter_min_mag_global_title">Magnitudo Global</string>
+    <string name="pref_twitter_min_mag_global_sum">Minimal magnitudo posting pesan untuk wilayah global</string>
+    <string name="pref_twitter_template_title">Template Twitter</string>
+    <string name="pref_twitter_template_sum">Template pesan Twitter yang akan dikirim secara otomatis</string>
+    
+	<!-- Email -->
+	<string name="pref_mail_title">Pengaturan Email</string>
+	<string name="pref_mail_sum">Pengaturan email lanjutan</string>
+	<string name="pref_mail_send_title">Kirim Email</string>
+	<string name="pref_mail_send_sum">Kirim email ketika terjadi gempa bumi</string>
+	<string name="pref_mail_min_mag_reg_title">Magnitudo Regional</string>
+    <string name="pref_mail_min_mag_reg_sum">Minimal magnitudo mengirim email untuk wilayah regional</string>
+    <string name="pref_mail_min_mag_global_title">Magnitudo Global</string>
+    <string name="pref_mail_min_mag_global_sum">Minimal magnitudo mengirim email untuk wilayah global</string>
+    <string name="pref_mail_host_title">Host</string>
+    <string name="pref_mail_host_sum">Pengaturan SMTP server</string>
+    <string name="pref_mail_port_title">SMTP Port</string>
+    <string name="pref_mail_port_sum">Pengaturan SMTP port</string>
+    <string name="pref_mail_sport_title">Socket Factory Port</string>
+    <string name="pref_mail_sport_sum">Pengaturan port socket factory</string>
+    <string name="pref_mail_login_title">Akun Email</string>
+    <string name="pref_mail_login_sum">Pengaturan akun email</string>
+    <string name="pref_mail_template_title">Template Email</string>
+    <string name="pref_mail_template_sum">Template pesan email yang akan dikirim secara otomatis</string>
+    
+    <!-- SMS -->
+    <string name="pref_sms_title">Pengaturan SMS</string>
+    <string name="pref_sms_sum">Pengaturan SMS lanjutan</string>
+    <string name="pref_sms_send_title">Kirim SMS</string>
+    <string name="pref_sms_send_sum">Kirimkan pesan ketika terjadi gempa bumi</string>
+    <string name="pref_sms_min_mag_reg_title">Magnitudo Regional</string>
+    <string name="pref_sms_min_mag_reg_sum">Minimal magnitudo mengirim SMS untuk wilayah regional</string>
+    <string name="pref_sms_min_mag_global_title">Magnitudo Global</string>
+    <string name="pref_sms_min_mag_global_sum">Minimal magnitudo mengirim SMS untuk wilayah global</string>
+    <string name="pref_sms_template_title">Template Pesan</string>
+    <string name="pref_sms_template_sum">Template pesan SMS</string>
+    
+	<!-- Lainnya -->
+	<string name="pref_others">Lainnya</string>
+	
+	<string name="pref_boot_start_title">Start saat Boot</string>
+    <string name="pref_boot_start_sum">Start service secara otomatis saat sistem boot</string>
+	
+	<!-- Dialog -->
+	<string name="pref_dialog_title">Dialog</string>
+	<string name="pref_dialog_sum">Perlihatkan atau sembunyikan dialog</string>
+	<string name="pref_dialog_startup_title">Startup Dialog</string>
+	<string name="pref_dialog_startup_sum">Perlihatkan startup dialog</string>
+	<string name="pref_dialog_interval_title">Peringatan Interval</string>
+	<string name="pref_dialog_interval_sum">Perlihatkan peringatan interval terlalu sering akan menguras baterai</string>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tema -->
+    <style name="Theme">
+        <item name="cacheColorHint">#000000</item>
+        <item name="background">#000000</item>
+        <item name="actionbarBackground">@drawable/action_background</item>
+        <item name="actionitemBackground">#88888888</item>
+        <item name="dateColor">#f2e8a7</item>
+    </style>
+
+    <style name="Theme.Light" parent="@android:Theme.Light">
+        <item name="cacheColorHint">#ffffff</item>
+        <item name="background">#ffffff</item>
+        <item name="actionbarBackground">@drawable/action_background</item>
+        <item name="actionitemBackground">#88888888</item>
+        <item name="dateColor">#795100</item>
+    </style>
+
+    <style name="Theme.Blue" parent="@android:Theme.Light">
+        <item name="cacheColorHint">#ffffff</item>
+        <item name="background">#ffffff</item>
+        <item name="actionbarBackground">@drawable/action_background_blue</item>
+        <item name="actionitemBackground">#8800aacc</item>
+        <item name="dateColor">#007788</item>
+    </style>
+
+    <!-- ActionBar -->
+    <style name="ActionBar">
+        <item name="android:id">@+id/action_bar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:background">?actionbarBackground</item>
+    </style>
+
+    <style name="ActionBarTitle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorHint">#cccccc</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="ActionBarButton">
+        <item name="android:layout_width">45dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/action_button</item>
+    </style>
+
+    <style name="ActionBarButtonLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+    <style name="ActionBarSeparator">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@drawable/action_separator</item>
+        <item name="android:contentDescription">@string/separator</item>
+    </style>
+    
+    <style name="ActionItem">
+        <item name="android:id">@+id/action_item</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:background">?actionitemBackground</item>
+    </style>
+    
+    <style name="DividerHorizontal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2px</item>
+        <item name="android:background">@drawable/divider_horizontal</item>
+    </style>
+
+    <style name="Animations" />
+
+    <!-- PopDownMenu -->
+    <style name="Animations.PopDownMenu" />
+
+    <style name="Animations.PopDownMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <!-- PopUpMenu -->
+    <style name="Animations.PopUpMenu" />
+
+    <style name="Animations.PopUpMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+</resources>

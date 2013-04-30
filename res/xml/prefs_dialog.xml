@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="dialog_startup"
+        android:summary="@string/pref_dialog_startup_sum"
+        android:title="@string/pref_dialog_startup_title" />
+    
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="dialog_interval"
+        android:summary="@string/pref_dialog_interval_sum"
+        android:title="@string/pref_dialog_interval_title" />
+
+</PreferenceScreen>
